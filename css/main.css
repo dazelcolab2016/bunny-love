@@ -1,68 +1,235 @@
 *{outline: 1px solid rgba(255,0,0,0.4);}
-body{font-family: Promt;}
-/*header-nav*/
-.nav-color{
-    background: #037f99;
-}
-/*--------- Header */
 
-header a,h3{
-	color: #fff;
+*{font-family: "Baloo paaji";
+    box-sizing: border-box;
 }
-nav li a{
-	display: block;
-	padding: 15px 15px;
-	transition: all 0.2s;
+.container
+{
+	margin:0 auto;
+	width: 80%;
+}
+
+body
+{
+	background-color: rgb(209,252,249);
+	margin: 0px !important;
+	padding: 0px !important;
+}
+/*--------Cabecera----------*/
+
+a 
+{
+	float: left;
+	margin-left: 10px;
+	color:white;
+	font-size: 15px;
+	text-decoration: none;
+}
+.centrado h1{
+    color:#ff7673;
+    font-size: 50px;
+    text-align: center;
+}
+
+.fondo-img
+{
+	background: url(../img/img-1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 50px 80px;
+}
+
+.sombra .centrado {
+	background-color: rgba(3, 127, 153, 0.87);
+}
+header
+{
+	background-color: rgb(3,127,153);
+}
+
+nav 
+{
+	margin-top: 30px;
+}
+
+.logo{
+	font-family: "Baloo paaji";
+	color: #FF7673;
+}
+
+span
+{
+	color:white;
+}
+
+}
+/*--------Section----------*/
+
+.mensaje {
+	color: rgb(255,118,115);
+	margin:0;
+	font-size:80px;
+	text-align: center;
+}
+
+.centrado h3 {
+	text-align: center;
+	color: white;
+}
+
+.centrado {
+	padding: 60px 30px;
+}
+
+ img{
+ 	width: 100%;
+ 	display: block;
+ }
+
+ .box-text {
+ 	background-color: rgb(3,127,153);
+ 	border: 10px solid white;
+ 	text-align: center;
+ }
+
+ .box-text h4 {
+ 	color:rgb(255,118,115);
+ }
+
+ .box-text p {
+ 	color: white;
+ }
+
+ .blue-font {
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ 	background-color: rgb(3,127,153);
+	color: black;
+ }
+
+ .blue-font h4 {
+ 	color: rgb(255,118,115);
+ 	text-align: center;
+ }
+
+.search {
+	background-color: #F1FCFF;
+	border-radius: 6px;
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	padding-left: 20px;
+}
+
+.face, .insta, .twitter, .youtube{
+	color:#037F99;
+	font-size:30px;
+	margin-left:70px;
+}
+
+.bottom-box{
+ 	border-top: 30px solid #037F99;
+}
+
+
+input {
+	width: 95%;
+	border: none;
 	border-radius: 6px;
 }
-nav li a:hover, nav li a:focus{
-	text-decoration: none;
-	outline: none;
-	background: #f4f0bb;
+/*--------footer----------*/
+footer {
+	background-color: #037F99;
+	border-top:3px solid #FF7673 ;
+	margin:0;
+	padding:40px;
 }
 
-#main-navigation{
-	z-index: 1;
-	position: absolute;
-	right: 10px;
-	margin: 10px 0 0 0;
+footer p{
+	text-align:center;
+	color:white;
+	margin: 0;
 }
-#main-navigation ul{
-	background: rgba(3,127,153,0.7);
-	list-style: none;
+
+.head-bunny {
+	background-image: url(../img/bunny-head.png);
+	background-size: contain;
+	padding:40px;
+}
+
+.icon{
+	visibility: hidden;
+}
+.box-left {
+	display:block;
+	background-color: #037F99;
+
+}
+.box-right{
+	display:block;
+}
+
+.box-left .box-right img{
+	display: block;
+	width: 100% 
+}
+.box-left, .box-right {
+	background-color: #D1FCF9;
+	width: 500px;
+	margin-left: 180px;
+	text-align: justify;
+	
+}
+.box-right p, .box-left p {
+	text-align: center;
 	padding: 10px;
-	border-radius: 5px;
 }
-.btn-nav p{
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-    color: #fff;
-    font-size: 17px;
-    vertical-align: middle;
+/*--------iframes----------*/
+iframe {
+	width: 500px;
+	height: 400px;
 }
 
-.btn-nav span{
-    background-color: #fff;
-   
-}
-/*--------- SECTION HERO */
-.hero-color{
-    background: #ecf7fb;
-}
-.hero-img{
-    background-image: url(../img/img-1.jpg);
-   
-    background-position: center;
-}
 
-.centrado{ /* --------centrado decente--------*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 440px;
-}
-.centrar{
-    margin: 0 auto; /* --------centrado decente--------*/
-    text-align: center;
+@media (max-width : 320px) {
+	.logo{
+		font-size: 30px;
+		display: inline;
+	}
+	.icon{
+		visibility: visible;
+		float: right;
+		margin-top: 10px;
+		color: white;
+		font-size: 30px;
+	}
+	nav {
+		visibility: hidden;
+		display: none;
+	}
+	.mensaje {
+		font-size: 40px;
+	}
+	.fondo-img{
+		padding: 25px 40px;
+	}
+	.degrade {
+		padding: 25px 15px;
+	}
+	.box-right{
+		display: none;
+	}
+	.box-left{
+		padding-right: 30px;
+	}
+	.col-7{
+		width: 100%;
+	}
+	.col-5{
+		width: 100%;
+	}
+	iframe{
+		width: 330px;
+		height: 300px;
+	}
+
 }
